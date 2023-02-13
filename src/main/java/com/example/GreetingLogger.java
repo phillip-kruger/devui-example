@@ -1,8 +1,8 @@
 package com.example;
 
 import io.quarkus.logging.Log;
-import javax.enterprise.context.ApplicationScoped;
-import javax.enterprise.event.Observes;
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.event.Observes;
 
 @ApplicationScoped
 public class GreetingLogger {
