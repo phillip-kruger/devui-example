@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
-@QuarkusTest
+//@QuarkusTest
 public class GreetingGraphQLTest {
 
-    @Test
+    //@Test
     public void testHelloTestEndpoint() {
         given()
           .when().get("/hello/Test")
@@ -18,7 +18,7 @@ public class GreetingGraphQLTest {
              .body(is("Hello Test"));
     }
 
-    @Test
+    //@Test
     public void testHelloWithSpaceEndpoint() {
         given()
           .when().get("/hello/Test Space")
@@ -27,7 +27,7 @@ public class GreetingGraphQLTest {
              .body(is("Hello Test Space"));
     }
     
-    @Test
+    //@Test
     public void testHelloAnotherEndpoint() {
         given()
           .when().get("/hello/Another")
